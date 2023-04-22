@@ -1,0 +1,3 @@
+{
+    "files": ["category_flower/catflower.py","model/category.py","list_flower/list_cat_flower_form.ui","share_flower/shareflower.ui","database/database.py","category_flower/catflower.ui","mainwindow.py","form.ui","list_cat_flower/list_cat_flower.py","share_flower/shareflower.py"]
+}
