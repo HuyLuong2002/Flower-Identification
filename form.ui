@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Phần mềm nhận diện hoa</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(246, 245, 244);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
@@ -24,25 +27,11 @@
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
-     <item row="2" column="0">
-      <widget class="QPushButton" name="browse_button">
-       <property name="text">
-        <string>Upload Image</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="img_label">
-       <property name="text">
-        <string>Image Label</string>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
      <item row="1" column="0">
       <widget class="QLabel" name="predict_label">
+       <property name="styleSheet">
+        <string notr="true">gridline-color: rgb(61, 56, 70);</string>
+       </property>
        <property name="text">
         <string>Predict Label</string>
        </property>
@@ -50,6 +39,46 @@
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="img_label">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Image Label</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="browse_button">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(98, 160, 234);</string>
+         </property>
+         <property name="text">
+          <string>Upload Image</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="btn_viewdetail">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(98, 160, 234);</string>
+         </property>
+         <property name="text">
+          <string>Xem chi tiết</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
     </layout>
    </widget>
@@ -64,23 +93,22 @@
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="1">
-      <widget class="QPushButton" name="btn_list_flower">
-       <property name="text">
-        <string>Danh sách các loài hoa</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
       <widget class="QPushButton" name="btn_share">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(98, 160, 234);</string>
+       </property>
        <property name="text">
         <string>Chia sẻ</string>
        </property>
       </widget>
      </item>
      <item row="0" column="0">
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="btn_list_flower">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(98, 160, 234);</string>
+       </property>
        <property name="text">
-        <string>Quản lý hoa</string>
+        <string>Danh sách các loài hoa</string>
        </property>
       </widget>
      </item>
@@ -125,11 +153,17 @@
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="model_label">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
        <property name="text">
         <string>Image Label</string>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>

@@ -31,8 +31,9 @@ class Ui_Dialog(object):
         self.buttonBox.setStandardButtons(QDialogButtonBox.Cancel|QDialogButtonBox.Ok)
         self.verticalLayoutWidget = QWidget(Dialog)
         self.verticalLayoutWidget.setObjectName(u"verticalLayoutWidget")
-        self.verticalLayoutWidget.setGeometry(QRect(100, 40, 441, 240))
+        self.verticalLayoutWidget.setGeometry(QRect(100, 40, 441, 294))
         self.verticalLayout = QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayout.setSpacing(15)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.label_3 = QLabel(self.verticalLayoutWidget)
@@ -117,7 +118,7 @@ class Ui_Dialog(object):
     # setupUi
 
     def retranslateUi(self, Dialog):
-        Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"Chia se hoa", None))
+        Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"Chia s\u1ebb hoa", None))
         self.label_3.setText(QCoreApplication.translate("Dialog", u"From:", None))
         self.label_2.setText(QCoreApplication.translate("Dialog", u"Email: ", None))
         self.label_5.setText(QCoreApplication.translate("Dialog", u"Password:", None))
